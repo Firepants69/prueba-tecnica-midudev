@@ -5,6 +5,18 @@
   width: 100%;
 }
 
+header {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  cursor: crosshair;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

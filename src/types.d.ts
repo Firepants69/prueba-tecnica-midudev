@@ -1,3 +1,9 @@
+declare global {
+    interface Array<T> {
+        toSorted(compareFn?: (a: T, b: T) => number): T[]
+    }
+}
+
 export interface Welcome {
     results: User[];
     info: Info;
@@ -95,3 +101,10 @@ export interface Picture {
     medium: string;
     thumbnail: string;
 }
+
+export enum SortBy {
+    NONE = 'none',
+    NAME = 'name',
+    LAST = 'last',
+    COUNTRY = 'country'
+} 
